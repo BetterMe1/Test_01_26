@@ -1,6 +1,6 @@
 package xust;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 /*
 1. 存在重复元素
@@ -133,7 +133,7 @@ class Solution {
     	}
     	for(int i=0; i<nums.length; i++){
     		for(int j=i+1; j<=i+k && j<nums.length; j++){
-    			if(nums[i] - nums[j]>=-t && nums[i] - nums[j]<=t){    
+    			if((long)nums[i] - nums[j]>=-t && (long)nums[i] - nums[j]<=t){    
         			return true;
         		}
     		}
